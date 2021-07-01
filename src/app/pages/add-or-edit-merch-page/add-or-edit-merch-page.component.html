@@ -1,1 +1,42 @@
-<p>add-or-edit-merch-page works!</p>
+<div class="container">
+  <h2>create a new user</h2>
+  <form [formGroup]="options">
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Digit name of product from merchandise</mat-label>
+      <input matInput placeholder="name product" [(ngModel)]="formMerchandise.nameProduct" name="nameProduct"
+        [ngModelOptions]="{standalone: true}" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Digit quantity</mat-label>
+      <input matInput type="number" placeholder="quantity from merchandise" [(ngModel)]="formMerchandise.quantity"
+        name="quantity" [ngModelOptions]="{standalone: true}" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Digit admission date from merchandise</mat-label>
+      <input matInput placeholder="admission date" type="date" [(ngModel)]="formMerchandise.admissionDate"
+        name="admissionDate" [ngModelOptions]="{standalone: true}" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Select user that will register this merchandise</mat-label>
+      <mat-select matNativeControl [(ngModel)]="formMerchandise.userRegister" name="userRegister"
+        [ngModelOptions]="{standalone: true}">
+        <mat-option [value]="user.id" *ngFor="let user of users">{{user.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Select state of control from merchandise</mat-label>
+      <mat-select matNativeControl [(ngModel)]="formMerchandise.idControlMerchandise" name="idControlMerchandise"
+        [ngModelOptions]="{standalone: true}">
+        <mat-option [value]="control.id" *ngFor="let control of controlMerchandises">{{control.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="form-group">
+      <button mat-stroked-button (click)="onSubmit()">{{path == 'add' ? 'Save' : 'Edit'}} the merchandise</button>
+    </div>
+  </form>
+</div>
