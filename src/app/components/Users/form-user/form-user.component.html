@@ -1,1 +1,37 @@
-<p>form-user works!</p>
+<div class="container">
+  <h2>create a new user</h2>
+  <form [formGroup]="options">
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Digit name from user</mat-label>
+      <input matInput placeholder="fullname" [(ngModel)]="formUser.name" name="name"
+        [ngModelOptions]="{standalone: true}" />
+      <mat-hint>fullname from user</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Digit age</mat-label>
+      <input matInput type="number" placeholder="age from user" [(ngModel)]="formUser.age" name="age"
+        [ngModelOptions]="{standalone: true}" />
+      <mat-hint>digit the age that have the user</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Digit date entry to company from user</mat-label>
+      <input matInput placeholder="date entry company" type="date" [(ngModel)]="formUser.date_entry_company"
+        name="date_entry_company" [ngModelOptions]="{standalone: true}" />
+      <mat-hint>date entry to company from user</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" [color]="colorControl.value">
+      <mat-label>Select charge from user</mat-label>
+      <mat-select matNativeControl [(ngModel)]="formUser.id_charge" name="id_charge"
+        [ngModelOptions]="{standalone: true}">
+        <mat-option [value]="charge.id" *ngFor="let charge of charges">{{charge.name}}</mat-option>
+      </mat-select>
+      <mat-hint>Select the charge that have the user</mat-hint>
+    </mat-form-field>
+    <div class="form-group">
+      <button mat-stroked-button (click)="onSubmit()">Save the user</button>
+    </div>
+  </form>
+</div>

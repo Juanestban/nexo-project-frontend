@@ -30,7 +30,6 @@ export class ModalChargeComponent implements OnInit {
   ) {
     this.options = fb.group({
       color: this.colorControl,
-      name: fb.control(this.chargeForm.name),
     });
   }
 
