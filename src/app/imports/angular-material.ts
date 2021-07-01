@@ -12,6 +12,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 const AngularMaterialModule: any = [
   MatTableModule,
@@ -28,6 +29,7 @@ const AngularMaterialModule: any = [
   MatFormFieldModule,
   MatInputModule,
   MatButtonModule,
+  MatSnackBarModule,
 ];
 
 export default AngularMaterialModule;

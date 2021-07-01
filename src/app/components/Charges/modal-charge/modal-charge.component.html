@@ -3,12 +3,13 @@
   <form [formGroup]="options">
     <mat-form-field appearance="outline" [color]="colorControl.value">
       <mat-label>Digit the new charge that you want create</mat-label>
-      <input matInput placeholder="new charge" />
+      <input matInput placeholder="new charge" [(ngModel)]="chargeForm.name" name="name"
+        [ngModelOptions]="{standalone: true}" />
       <mat-hint>digit new charge</mat-hint>
     </mat-form-field>
   </form>
 </div>
 <div mat-dialog-actions class="form-group">
-  <button mat-button>Save</button>
+  <button mat-button (click)="saveCharge()">Save</button>
   <button mat-button mat-dialog-close color="warn">Close</button>
 </div>
