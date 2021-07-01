@@ -6,8 +6,8 @@ import { MerchandisesPageComponent } from './pages/merchandises-page/merchandise
 import { UsersPageComponent } from './pages/users-page/users-page.component';
 
 const routes: Routes = [
-  { path: '/', component: HomePageComponent },
-  { path: '/users', component: UsersPageComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'users', component: UsersPageComponent },
   { path: 'merchandises', component: MerchandisesPageComponent },
   { path: 'merchandises/:id', component: AddOrEditMerchPageComponent },
 ];

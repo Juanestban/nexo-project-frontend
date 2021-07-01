@@ -1,0 +1,37 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+  padding: 7px 8px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--text-color);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 17px;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover {
+  color: var(--hover-color);
+}
+
+.toolbar {
+  background-color: var(--toolbar);
+  color: var(--text-color);
+}
+
+.container {
+  padding: 20px 5%;
+}
