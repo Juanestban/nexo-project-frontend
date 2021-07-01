@@ -7,6 +7,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { PortalModule } from '@angular/cdk/portal';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 const AngularMaterialModule: any = [
   MatTableModule,
@@ -18,6 +23,11 @@ const AngularMaterialModule: any = [
   MatIconModule,
   MatProgressSpinnerModule,
   PortalModule,
+  MatCardModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatButtonModule,
 ];
 
 export default AngularMaterialModule;

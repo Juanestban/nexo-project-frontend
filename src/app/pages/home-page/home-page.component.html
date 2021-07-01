@@ -1,1 +1,14 @@
-<p>home-page works!</p>
+<div class="container">
+  <mat-card routerLink="/merchandises">
+    <mat-icon>inventory</mat-icon>
+    Merchandises
+  </mat-card>
+  <mat-card routerLink="/users">
+    <mat-icon>people</mat-icon>
+    Users
+  </mat-card>
+  <mat-card (click)="onOpenDialog()">
+    <mat-icon>manage_accounts</mat-icon>
+    Charges
+  </mat-card>
+</div>

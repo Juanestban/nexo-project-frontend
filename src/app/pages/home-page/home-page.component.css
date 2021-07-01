@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mat-card {
+  display: flex;
+  align-items: center;
+  width: calc(90% / 3);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--hover-color);
+  cursor: pointer;
+}
+
+.mat-card .mat-icon {
+  margin-right: 5px;
+}
