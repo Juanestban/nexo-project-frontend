@@ -18,6 +18,7 @@ import { ControlMerchandiseService } from './services/ControlMerchandiseService/
 import { MerchandiseService } from './services/MerchandiseService/merchandise.service';
 import { MerchandiseUserService } from './services/MerchandiseUserService/merchandise-user.service';
 import { UserService } from './services/UserService/user.service';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { UserService } from './services/UserService/user.service';
     TableUsersComponent,
     FormUserComponent,
     ModalChargeComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
